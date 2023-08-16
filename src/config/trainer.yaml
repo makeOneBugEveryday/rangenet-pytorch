@@ -1,0 +1,11 @@
+darknet : 
+  layers_number : 21
+  in_channels : 5
+  out_channels : 20
+  momentum : 0.01
+  slope : 0.1
+  dropout_p : 0.01
+
+dataset_cfg_path : "C:/Users/1015947658/Desktop/rangenet-pytorch/src/config/semantic-kitti.yaml"
+
+
