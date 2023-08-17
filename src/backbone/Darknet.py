@@ -171,6 +171,7 @@ class Darknet(torch.nn.Module):
     def forward(self, x):
         x, os_dict = self.encoder(x)
         x = self.decoder(x, os_dict)
+        x = self.softmax(x)
         return x
 
 

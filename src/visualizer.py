@@ -3,6 +3,7 @@ import numpy as np
 import yaml
 import json
 import os
+import time
 
 class Visualizer:
     def __init__(self, cfg_path):
@@ -73,7 +74,9 @@ class Visualizer:
         label = label.reshape((-1))
         semantic_label = label & 0x0000FFFF
         # instance_lable = label >> 16
+        t0 = time.time()
         colors = np.asarray([self.color_map[item] for item in semantic_label])
+        print(time.time()-t0)
         colors = colors/256
         self.pcd.colors = o3d.utility.Vector3dVector(colors)
         

@@ -1,13 +1,7 @@
-
-trainer:
-  dataset_dir : "C:/Users/1015947658/Desktop/semanticKITTI"
+inferencer:
+  pcd_dir : "C:/Users/1015947658/Desktop/semanticKITTI/sequences/08/velodyne"
   dataset_cfg_path : "C:/Users/1015947658/Desktop/github/rangenet-pytorch/src/config/semantic-kitti.yaml"
-  batch_size : 12
-  shuffle : false
-  num_workers : 0
-  lr : 0.0001
-  max_epochs : 150
-  
+  label_dir : "C:/Users/1015947658/Desktop/semanticKITTI/sequences/08/labels"
 
 darknet : 
   layers_number : 21
